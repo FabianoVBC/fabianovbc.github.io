@@ -4,88 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabiano Cardoso | Portfolio</title>
-    <meta name="description" content="Portfolio pessoal de Fabiano Cardoso. Desenvolvedor e criador.">
+    <meta name="description" content="Portfolio de Fabiano Cardoso">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar">
-        <div class="nav-content">
-            <a href="#" class="logo">FC.</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">Fabiano®</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#services">Serviços</a></li>
+        </ul>
+        <a href="#contact" class="nav-contact">Contato •</a>
     </nav>
 
+    <!-- Hero Section -->
     <header id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch-effect" data-text="Fabiano Cardoso">Fabiano Cardoso</h1>
-            <p class="subtitle">Construindo experiências digitais modernas e interativas.</p>
-            <a href="#projects" class="cta-button">Ver Projetos</a>
+        <div class="hero-top">
+            <div class="hero-roles">
+                <p>Desenvolvedor</p>
+                <p>Designer UI/UX</p>
+                <p>Criador Digital</p>
+            </div>
+            <div class="hero-social">
+                <p>Social media</p>
+                <div class="social-icons">
+                    <a href="#">In</a>
+                    <a href="#">Tw</a>
+                </div>
+            </div>
         </div>
-        <div class="hero-background"></div>
+
+        <div class="hero-center">
+            <!-- Placeholder para a foto central vazada -->
+            <div class="hero-image-placeholder"></div>
+        </div>
+
+        <div class="hero-bottom">
+            <h1 class="hero-title">Fabiano®</h1>
+            <div class="hero-desc">
+                <p>Sou o Fabiano, um desenvolvedor multidisciplinar ajudando marcas a criarem experiências digitais simples, bonitas e de alto impacto.</p>
+            </div>
+        </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content glass-card">
-                <p>Olá! Sou o Fabiano. Sou apaixonado por tecnologia, design e por criar soluções que impactam a vida das pessoas. O meu foco é desenvolver aplicações web robustas com interfaces incríveis.</p>
-                <div class="skills">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Design UI/UX</span>
+    <!-- Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>Foco em Conversão • Qualidade > Quantidade • Disponível Globalmente • Soluções Modernas •</span>
+            <span>Foco em Conversão • Qualidade > Quantidade • Disponível Globalmente • Soluções Modernas •</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="label-col">
+            <p class="section-label">SOBRE MIM</p>
+        </div>
+        <div class="content-col">
+            <h2 class="about-text">
+                Sou o Fabiano, um desenvolvedor focado em ajudar <span class="muted">marcas em crescimento</span> a transformar <span class="muted">ideias complexas em produtos digitais simples e elegantes.</span> Desde a estratégia até o lançamento final, cada projeto é construído com propósito e atenção aos detalhes.
+            </h2>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="projects-header">
+            <p class="section-label">PROJETOS</p>
+            <h2 class="section-title">Trabalhos Selecionados</h2>
+            <a href="#" class="view-all">Ver Todos •</a>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img bg-dark-gray"></div>
+                <div class="project-info">
+                    <h3>Identidade Nova</h3>
+                    <span class="project-year">/2026</span>
                 </div>
+                <p class="project-category">Brand Identity</p>
+            </div>
+            <div class="project-card">
+                <div class="project-img bg-blue"></div>
+                <div class="project-info">
+                    <h3>CapWave</h3>
+                    <span class="project-year">/2026</span>
+                </div>
+                <p class="project-category">Product Design</p>
+            </div>
+            <div class="project-card">
+                <div class="project-img bg-red"></div>
+                <div class="project-info">
+                    <h3>Vertex Space</h3>
+                    <span class="project-year">/2025</span>
+                </div>
+                <p class="project-category">Web Design</p>
+            </div>
+            <div class="project-card">
+                <div class="project-img bg-green"></div>
+                <div class="project-info">
+                    <h3>Evermark</h3>
+                    <span class="project-year">/2025</span>
+                </div>
+                <p class="project-category">Logo Design</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card glass-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4);"></div>
-                    <div class="project-info">
-                        <h3>Projeto Alfa</h3>
-                        <p>Uma aplicação revolucionária focada em performance e usabilidade.</p>
-                    </div>
-                </div>
-                <div class="project-card glass-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #A8E6CF, #3D84A8);"></div>
-                    <div class="project-info">
-                        <h3>Projeto Beta</h3>
-                        <p>Design de interface moderno com foco em micro-interações.</p>
-                    </div>
-                </div>
-                <div class="project-card glass-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #6C5B7B, #C06C84);"></div>
-                    <div class="project-info">
-                        <h3>Projeto Gama</h3>
-                        <p>Plataforma interativa para conectar pessoas criativas.</p>
-                    </div>
-                </div>
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="label-col">
+            <p class="section-label">O QUE EU FAÇO</p>
+        </div>
+        <div class="content-col services-list">
+            <div class="service-item active">
+                <span class="service-num">01</span>
+                <h2>Branding</h2>
+            </div>
+            <div class="service-item">
+                <span class="service-num">02</span>
+                <h2>Desenvolvimento</h2>
+            </div>
+            <div class="service-item">
+                <span class="service-num">03</span>
+                <h2>Motion</h2>
+            </div>
+            <div class="service-item">
+                <span class="service-num">04</span>
+                <h2>UI/UX Design</h2>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contato</h2>
-            <div class="contact-card glass-card">
-                <p>Pronto para iniciar um novo projeto? Vamos conversar!</p>
-                <a href="mailto:contato@exemplo.com" class="cta-button">Enviar Mensagem</a>
-            </div>
-        </div>
+    <!-- CTA Section -->
+    <section id="contact" class="section cta-section">
+        <h1 class="cta-title">Vamos conversar <span class="arrow">→</span></h1>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Fabiano Cardoso. Todos os direitos reservados.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <h2 class="footer-logo">Fabiano®</h2>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Serviços</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#">Projetos</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Design inspirado em portfólios premium.</p>
+            <div class="footer-legal">
+                <a href="#">Style guide</a>
+                <a href="#">Licenças</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

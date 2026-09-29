@@ -1,15 +1,23 @@
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
+// Marquee continuous loop clone
+const marqueeContent = document.querySelector('.marquee-content');
+if (marqueeContent) {
+    const clone = marqueeContent.innerHTML;
+    marqueeContent.innerHTML += clone;
+}
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+// Service items hover effect
+const serviceItems = document.querySelectorAll('.service-item');
+
+serviceItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        // Remove active class from all
+        serviceItems.forEach(i => i.classList.remove('active'));
+        // Add to current
+        item.classList.add('active');
+    });
 });
 
-// Subtle reveal animation for sections
+// Smooth reveal animation
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -28,7 +36,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.section').forEach(section => {
     section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
-    section.style.transition = 'all 0.6s ease-out';
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
     observer.observe(section);
 });
