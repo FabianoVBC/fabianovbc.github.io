@@ -59,7 +59,7 @@ if (appContainer) {
     appContainer.appendChild(renderer.domElement);
 }
 
-const count = 20000;
+const count = 2000;
 const positions = new Float32Array(count * 3);
 const colours = new Float32Array(count * 3);
 const geometry = new THREE.BufferGeometry();
@@ -75,16 +75,16 @@ for (let i = 0; i < count; i++) {
     const spin = radius * 0.55;
     const random = (Math.random() - .5) * (1.8 + radius * .06);
     const angle = branch + spin + random;
-    
+
     positions[i3] = Math.cos(angle) * radius;
     positions[i3 + 1] = (Math.random() - .5) * (1.3 + radius * .08);
     positions[i3 + 2] = Math.sin(angle) * radius;
-    
+
     const mix = radius / 22;
     let colour;
     if (Math.random() > .94) colour = colourC.clone();
     else colour = colourA.clone().lerp(colourB, mix);
-    
+
     colours[i3] = colour.r;
     colours[i3 + 1] = colour.g;
     colours[i3 + 2] = colour.b;

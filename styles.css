@@ -144,8 +144,12 @@ p { font-size: 1rem; color: var(--text-muted); }
 }
 
 #app {
-    position: fixed;
-    inset: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     z-index: 0;
     pointer-events: none;
 }
@@ -156,7 +160,7 @@ p { font-size: 1rem; color: var(--text-muted); }
 
 .hero-top {
     position: absolute;
-    top: 2rem;
+    top: 8rem;
     left: 7vw;
     right: 7vw;
     display: flex;
